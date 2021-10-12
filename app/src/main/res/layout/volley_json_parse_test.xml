@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <Button
+        android:id="@+id/button_insert"
+        android:layout_width="172dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="88dp"
+        android:background="#ff5722"
+        android:onClick="btnConn"
+        android:text="Save data"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_alarm"
+        android:layout_width="220dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="60dp"
+        android:background="#fdd835"
+        android:onClick="btnConn"
+        android:text="Choose Alarming Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_date_create"
+        android:layout_width="176dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="8dp"
+        android:background="#fdd835"
+        android:onClick="btnConn"
+        android:text="Choose Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Edit_Text_Insert_ItemName_CreatePage"
+        android:layout_width="241dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="Input the Item Name"
+        android:inputType="textPersonName"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Edit_Text_Month_CreatePage"
+        android:layout_width="82dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="264dp"
+        android:ems="10"
+        android:hint="Month"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Edit_Text_Days_CreatePage"
+        android:layout_width="83dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Days"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Edit_Text_Hours_CreatePage"
+        android:layout_width="88dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="376dp"
+        android:ems="10"
+        android:hint="Hours"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Edit_Text_Minutes_CreatePage"
+        android:layout_width="100dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="376dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:hint="Minutes"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Edit_Text_MusicName_CreatePage"
+        android:layout_width="201dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="60dp"
+
+        android:ems="10"
+
+        android:hint="Choose Your Music"
+        android:inputType="textPersonName"
+        android:onClick="showMusic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="126dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="112dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clock" />
+
+    <TextView
+        android:id="@+id/textView_Name_indication"
+        android:layout_width="50dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="176dp"
+        android:text="Name:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toStartOf="@+id/Edit_Text_Insert_ItemName_CreatePage"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_month_indication"
+        android:layout_width="60dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="272dp"
+        android:text="Month:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_day_indication"
+        android:layout_width="67dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="388dp"
+        android:layout_marginEnd="96dp"
+        android:text="Minute："
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_hour_indication"
+        android:layout_width="56dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="388dp"
+        android:text="Hour:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_minute_indication"
+        android:layout_width="52dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="88dp"
+        android:text="day:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
